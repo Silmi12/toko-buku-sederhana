@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="400" viewBox="0 0 300 400">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b7450a"/>
+      <stop offset="100%" stop-color="#7c2d06"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="400" fill="url(#bg4)"/>
+  <rect width="18" height="400" fill="#6a2505"/>
+  <rect x="18" y="0" width="282" height="6" fill="#f57c28"/>
+  <rect x="40" y="155" width="220" height="1" fill="#f9d080" opacity="0.5"/>
+  <rect x="40" y="275" width="220" height="1" fill="#f9d080" opacity="0.5"/>
+  <!-- Dekorasi bintang dan bulan -->
+  <polygon points="159,68 163,80 176,80 166,87 170,100 159,92 148,100 152,87 142,80 155,80" fill="#f9d080" opacity="0.7"/>
+  <circle cx="185" cy="78" r="10" fill="none" stroke="#f9d080" stroke-width="1.5" opacity="0.4"/>
+  <!-- Judul -->
+  <text x="159" y="195" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="#fde68a" text-anchor="middle">Sang</text>
+  <text x="159" y="232" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="#fde68a" text-anchor="middle">Alkemis</text>
+  <!-- Penulis -->
+  <text x="159" y="298" font-family="Georgia, serif" font-size="13" fill="#fbbf80" text-anchor="middle">Paulo Coelho</text>
+</svg>

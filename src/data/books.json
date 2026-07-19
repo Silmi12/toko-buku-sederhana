@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Laskar Pelangi",
+    "author": "Andrea Hirata",
+    "description": "Kisah persahabatan sepuluh anak Belitung yang berjuang meraih mimpi meski belajar di sekolah yang hampir roboh.",
+    "cover": "assets/images/cover-laskar-pelangi.svg"
+  },
+  {
+    "id": 2,
+    "title": "Bumi Manusia",
+    "author": "Pramoedya Ananta Toer",
+    "description": "Roman sejarah berlatar era kolonial yang mengisahkan perjuangan Minke, pemuda Jawa terdidik, melawan penindasan.",
+    "cover": "assets/images/cover-bumi-manusia.svg"
+  },
+  {
+    "id": 3,
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "description": "Panduan praktis membangun kebiasaan baik melalui perubahan kecil yang konsisten dan berdampak besar jangka panjang.",
+    "cover": "assets/images/cover-atomic-habits.svg"
+  },
+  {
+    "id": 4,
+    "title": "Sang Alkemis",
+    "author": "Paulo Coelho",
+    "description": "Perjalanan Santiago, seorang gembala muda, mengejar impiannya hingga piramida Mesir dalam kisah penuh makna hidup.",
+    "cover": "assets/images/cover-sang-alkemis.svg"
+  },
+  {
+    "id": 5,
+    "title": "Filosofi Teras",
+    "author": "Henry Manampiring",
+    "description": "Mengenal filsafat Stoa dan menerapkannya dalam kehidupan modern untuk menghadapi kecemasan dan tekanan sehari-hari.",
+    "cover": "assets/images/cover-filosofi-teras.svg"
+  },
+  {
+    "id": 6,
+    "title": "Negeri 5 Menara",
+    "author": "Ahmad Fuadi",
+    "description": "Kisah Alif dan lima sahabatnya di pesantren modern yang belajar mewujudkan mimpi besar dengan semangat Man Jadda Wajada.",
+    "cover": "assets/images/cover-negeri-5-menara.svg"
+  }
+]

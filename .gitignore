@@ -1,0 +1,13 @@
+# Backup files
+*.bak
+
+# Node
+node_modules/
+package-lock.json
+
+# Test artifacts
+verify_test.mjs
+
+# OS
+.DS_Store
+Thumbs.db
