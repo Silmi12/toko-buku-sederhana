@@ -73,6 +73,14 @@
 
 ---
 
+## Phase 7 — Tombol WhatsApp [SELESAI]
+- [x] `WA_NUMBER` sebagai konstanta konfigurasi di `script.js`
+- [x] Tombol "Tanya Buku Ini" pada setiap kartu buku
+- [x] Pesan otomatis: "Halo, saya ingin bertanya mengenai buku: [Judul]"
+- [x] Buka di tab baru (`target="_blank"`)
+
+---
+
 ## Phase 6 — Fitur Manajemen Buku [SELESAI]
 
 ### Tambah Buku

@@ -1,5 +1,5 @@
 const WA_NUMBER = "6281234567890";
-const WA_MESSAGE = "Halo, saya mau bertanya mengenai buku ini.";
+const WA_MESSAGE = "Halo, saya ingin bertanya mengenai buku:";
 const STORAGE_KEY = "toko_buku_data";
 
 function escapeHtml(str) {
@@ -12,7 +12,7 @@ function escapeHtml(str) {
 }
 
 function buildWhatsAppURL(bookTitle) {
-  const message = `${WA_MESSAGE} Judul: ${bookTitle}`;
+  const message = `${WA_MESSAGE} ${bookTitle}`;
   return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`;
 }
 
