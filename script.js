@@ -1,4 +1,4 @@
-const WA_NUMBER = "6281234567890";
+const WA_NUMBER = "6289653943172";
 const WA_MESSAGE = "Halo, saya ingin bertanya mengenai buku:";
 const STORAGE_KEY = "toko_buku_data";
 
