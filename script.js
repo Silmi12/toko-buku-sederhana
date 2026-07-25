@@ -1,6 +1,5 @@
 const WA_NUMBER = "6289653943172";
 const WA_MESSAGE = "Halo, saya ingin bertanya mengenai buku:";
-const STORAGE_KEY = "toko_buku_data";
 
 function escapeHtml(str) {
   return String(str)
@@ -16,14 +15,6 @@ function buildWhatsAppURL(bookTitle) {
   return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`;
 }
 
-function getBooksFromStorage() {
-  const raw = localStorage.getItem(STORAGE_KEY);
-  return raw ? JSON.parse(raw) : null;
-}
-
-function saveBooksToStorage(books) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(books));
-}
 
 function createBookCard(book) {
   const card = document.createElement("article");
@@ -85,15 +76,9 @@ async function loadBooks() {
   const grid = document.getElementById("book-grid");
 
   try {
-    let books = getBooksFromStorage();
-
-    if (!books) {
-      const response = await fetch("data/books.json");
-      if (!response.ok) throw new Error("Gagal memuat data buku.");
-      books = await response.json();
-      saveBooksToStorage(books);
-    }
-
+    const response = await fetch("data/books.json");
+    if (!response.ok) throw new Error("Gagal memuat data buku.");
+    const books = await response.json();
     renderBooks(books);
   } catch (err) {
     grid.innerHTML = '<p class="empty-state">Gagal memuat daftar buku. Coba muat ulang halaman.</p>';

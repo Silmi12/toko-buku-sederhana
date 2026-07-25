@@ -60,16 +60,10 @@ function createBookCard(book) {
           </svg>
           Tanya Buku Ini
         </a>
-        <button
-          class="btn-hapus"
-          data-id="${book.id}"
-          aria-label="Hapus buku ${safeTitle}"
-        >Hapus</button>
       </div>
     </div>
   `;
 
-  card.querySelector(".btn-hapus").addEventListener("click", () => deleteBook(book.id));
   return card;
 }
 
@@ -85,85 +79,6 @@ function renderBooks(books) {
   const fragment = document.createDocumentFragment();
   books.forEach((book) => fragment.appendChild(createBookCard(book)));
   grid.appendChild(fragment);
-}
-
-function deleteBook(id) {
-  const books = getBooksFromStorage();
-  const updated = books.filter((b) => b.id !== id);
-  saveBooksToStorage(updated);
-  renderBooks(updated);
-}
-
-function initCoverPreview() {
-  const input = document.getElementById("input-cover");
-  const preview = document.getElementById("preview-cover");
-  input.addEventListener("change", () => {
-    const file = input.files[0];
-    if (!file) { preview.classList.add("hidden"); return; }
-    const reader = new FileReader();
-    reader.onload = (e) => {
-      preview.src = e.target.result;
-      preview.classList.remove("hidden");
-    };
-    reader.readAsDataURL(file);
-  });
-}
-
-function readCoverAsBase64(file) {
-  return new Promise((resolve) => {
-    if (!file) { resolve(null); return; }
-    const reader = new FileReader();
-    reader.onload = (e) => resolve(e.target.result);
-    reader.readAsDataURL(file);
-  });
-}
-
-function addBook(event) {
-  event.preventDefault();
-
-  const titleInput = document.getElementById("input-judul");
-  const authorInput = document.getElementById("input-penulis");
-  const descInput = document.getElementById("input-deskripsi");
-  const coverInput = document.getElementById("input-cover");
-  const errorEl = document.getElementById("form-error");
-
-  const title = titleInput.value.trim();
-  const author = authorInput.value.trim();
-  const desc = descInput.value.trim();
-
-  // Validasi
-  if (!title) {
-    errorEl.textContent = "Judul buku wajib diisi.";
-    titleInput.focus();
-    return;
-  }
-  if (!desc) {
-    errorEl.textContent = "Deskripsi buku tidak boleh kosong.";
-    descInput.focus();
-    return;
-  }
-
-  errorEl.textContent = "";
-
-  const coverFile = coverInput.files[0] || null;
-  readCoverAsBase64(coverFile).then((base64) => {
-    const books = getBooksFromStorage() || [];
-    const newBook = {
-      id: Date.now(),
-      title,
-      author,
-      description: desc,
-      cover: base64 || "assets/images/placeholder.svg",
-    };
-
-    books.push(newBook);
-    saveBooksToStorage(books);
-    renderBooks(books);
-
-    event.target.reset();
-    document.getElementById("preview-cover").classList.add("hidden");
-    titleInput.focus();
-  });
 }
 
 async function loadBooks() {
@@ -188,6 +103,4 @@ async function loadBooks() {
 
 document.addEventListener("DOMContentLoaded", () => {
   loadBooks();
-  initCoverPreview();
-  document.getElementById("form-tambah-buku").addEventListener("submit", addBook);
 });
