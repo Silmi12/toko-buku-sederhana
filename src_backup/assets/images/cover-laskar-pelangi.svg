@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="400" viewBox="0 0 300 400">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f9b8e"/>
+      <stop offset="100%" stop-color="#0a6b62"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="400" fill="url(#bg1)"/>
+  <rect width="18" height="400" fill="#085c55"/>
+  <rect x="18" y="0" width="282" height="6" fill="#13c4b4"/>
+  <rect x="40" y="160" width="220" height="1" fill="#ffffff" opacity="0.3"/>
+  <rect x="40" y="270" width="220" height="1" fill="#ffffff" opacity="0.3"/>
+  <!-- Dekorasi lingkaran pelangi -->
+  <circle cx="159" cy="100" r="40" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.25"/>
+  <circle cx="159" cy="100" r="28" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.2"/>
+  <text x="159" y="96" font-family="Georgia, serif" font-size="11" fill="#cef0ee" text-anchor="middle" opacity="0.7">✦</text>
+  <!-- Judul -->
+  <text x="159" y="195" font-family="Georgia, serif" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle">Laskar</text>
+  <text x="159" y="228" font-family="Georgia, serif" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle">Pelangi</text>
+  <!-- Penulis -->
+  <text x="159" y="298" font-family="Georgia, serif" font-size="13" fill="#a8e6e1" text-anchor="middle">Andrea Hirata</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="400" viewBox="0 0 300 400">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1565c0"/>
+      <stop offset="100%" stop-color="#0d47a1"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="400" fill="url(#bg3)"/>
+  <rect width="18" height="400" fill="#0a3880"/>
+  <rect x="18" y="0" width="282" height="6" fill="#42a5f5"/>
+  <rect x="40" y="155" width="220" height="1" fill="#ffffff" opacity="0.25"/>
+  <rect x="40" y="275" width="220" height="1" fill="#ffffff" opacity="0.25"/>
+  <!-- Loop atom icon -->
+  <circle cx="159" cy="100" r="36" fill="none" stroke="#64b5f6" stroke-width="2" opacity="0.5"/>
+  <circle cx="159" cy="100" r="7" fill="#ffffff" opacity="0.7"/>
+  <ellipse cx="159" cy="100" rx="36" ry="16" fill="none" stroke="#90caf9" stroke-width="1.2" opacity="0.4" transform="rotate(60 159 100)"/>
+  <!-- Judul -->
+  <text x="159" y="193" font-family="'Segoe UI', sans-serif" font-size="30" font-weight="bold" fill="#ffffff" text-anchor="middle">ATOMIC</text>
+  <text x="159" y="230" font-family="'Segoe UI', sans-serif" font-size="30" font-weight="bold" fill="#ffffff" text-anchor="middle">HABITS</text>
+  <!-- Penulis -->
+  <text x="159" y="298" font-family="'Segoe UI', sans-serif" font-size="13" fill="#90caf9" text-anchor="middle">James Clear</text>
+</svg>

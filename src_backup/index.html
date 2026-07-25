@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Katalog buku pilihan — temukan buku yang Anda cari dan tanya langsung via WhatsApp." />
+  <meta property="og:title" content="Katalog Buku" />
+  <meta property="og:description" content="Temukan buku pilihan dan tanya via WhatsApp." />
+  <title>Katalog Buku</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">Katalog Buku</h1>
+      <p class="site-tagline">Temukan buku pilihan Anda</p>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <div class="container">
+
+      <section class="form-section" aria-label="Tambah Buku Baru">
+        <h2 class="form-title">Tambah Buku Baru</h2>
+        <form id="form-tambah-buku" novalidate>
+          <div class="form-group">
+            <label for="input-judul">Judul <span aria-hidden="true">*</span></label>
+            <input type="text" id="input-judul" placeholder="Judul buku" maxlength="200" />
+          </div>
+          <div class="form-group">
+            <label for="input-penulis">Penulis</label>
+            <input type="text" id="input-penulis" placeholder="Nama penulis" maxlength="200" />
+          </div>
+          <div class="form-group">
+            <label for="input-deskripsi">Deskripsi <span aria-hidden="true">*</span></label>
+            <textarea id="input-deskripsi" placeholder="Deskripsi singkat buku" rows="3" maxlength="500"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="input-cover">Cover Buku</label>
+            <input type="file" id="input-cover" accept="image/*" />
+            <img id="preview-cover" class="preview-cover hidden" alt="Preview cover buku" />
+          </div>
+          <p class="form-error" id="form-error" role="alert" aria-live="polite"></p>
+          <button type="submit" class="btn-tambah">+ Tambah Buku</button>
+        </form>
+      </section>
+
+      <section class="book-catalog" aria-label="Daftar Buku">
+        <div class="book-grid" id="book-grid">
+          <!-- Buku dirender oleh script.js -->
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Katalog Buku. Hubungi kami via WhatsApp.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
